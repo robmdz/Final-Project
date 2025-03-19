@@ -20,7 +20,7 @@ h2{
     font-family: "DM Sans", sans-serif;
     text-align: center;
 }
-.nombre{
+.name{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -29,7 +29,7 @@ h2{
     margin: 8px;
     font-size: 20px;
 }
-.apellido{
+.last_name{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -38,7 +38,7 @@ h2{
     margin: 8px;
     font-size: 20px;
 }
-.celular{
+.email{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -47,7 +47,25 @@ h2{
     margin: 8px;
     font-size: 20px;
 }
-.enviar{
+.phone_number{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    margin: 8px;
+    font-size: 20px;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    margin: 8px;
+    font-size: 20px;
+}
+.add{
     font-size: 16px;
     padding: 12px 28px;
     border-radius: 8px;
@@ -56,14 +74,14 @@ h2{
     cursor: pointer;
     margin: 8px;
 }
-.enviar{
+.add{
     transition-duration: 0.4s;
   }
   
-.enviar:hover {
+.add:hover {
     background-color: #bc175f; 
     color: white;
   }
-  .enviar {
+.add {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }

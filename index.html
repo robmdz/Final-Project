@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <script defer src="/code_frontend.js"></script>
     <title>CheckHouse | security </title>
 </head>
 <body>
-                <!--<div class="form">
-                    <form action="/submit_form" method="POST">
+                <div class="form">
+                    <form id="userForm">
                         
                     <h2>formulario</h2>
 
-                    <input type="text" name="nombre" placeholder="nombre" class="nombre">
-                    <input type="text" name="apellido" placeholder="apellido" class="apellido">
-                    <input type="number" name="celular" placeholder="celular" class="celular">
-                    <input type="button" value="Enviar" class="enviar">
-                </div>!-->
-                <h1>Users List</h1>
-                <button onclick="fetchUsers()">Load Users</button>
+                    <input type="text" name="nombre" placeholder="nombre" class="name" id="name">
+                    <input type="text" name="apellido" placeholder="apellido" class="last_name" id="last_name">
+                    <input type="email" name="email" placeholder="email" class="email" id="email">
+                    <input type="number" name="celular" placeholder="celular" class="phone_number" id="phone_number">
+                    <input type="text" name="password" placeholder="password" class="password" id="password">
+                    <button type="submit" class="add">Add User</button>
+                </div>
+                <h2>Users List</h2>
                 <div id="users"></div>
-        </form>
     </div>
+    <script src="/code_frontend.js"></script>
 </body>
 </html>
