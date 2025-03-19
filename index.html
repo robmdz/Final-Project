@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script defer src="/code_frontend.js"></script>
     <title>CheckHouse | security </title>
 </head>
 <body>
+                <!--<div class="form">
+                    <form action="/submit_form" method="POST">
+                        
+                    <h2>formulario</h2>
 
-    <div>
-        <form action="">
-            <button>Login</button>
-            <button>Sing Up</button>
-            <button>Help</button>
+                    <input type="text" name="nombre" placeholder="nombre" class="nombre">
+                    <input type="text" name="apellido" placeholder="apellido" class="apellido">
+                    <input type="number" name="celular" placeholder="celular" class="celular">
+                    <input type="button" value="Enviar" class="enviar">
+                </div>!-->
+                <h1>Users List</h1>
+                <button onclick="fetchUsers()">Load Users</button>
+                <div id="users"></div>
         </form>
     </div>
 </body>
