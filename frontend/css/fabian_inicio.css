@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4e7ff; 
+}
+header{
+width: auto;
+height: 100%
+}
+nav {
+    list-style-type: none;
+    padding: 55px 5px;
+    text-align: center;
+    border: 0;
+}
+.properties {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.property {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+}
+.property img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.segundotitulo {
+    text-align: center;
+}
+.navitem{
+    display: inline;
+    margin: 0 15px;
+}
+.navlink{
+    color: #dd1163;
+    text-decoration: none;
+    padding: 0px;
+    border-radius: 0;
+    transition: all 0.5s ease;
+}
+.navlink:hover{
+    background-color: #eca3c3;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+h1{
+    color: #dd1163;
+    text-align: center;   
+}
+.logo{
+    width: 0x;
+    padding: 0px;
+    margin-left: 30px;
+}
+.logotituloul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+     position: fixed; /* Fija la barra superior */
+    width: 100%;
+    height: 120px;
+    background-color: #ccc; /* Color de fondo para evitar superposición */
+    z-index: 1000; /* Asegura que esté encima de otras capas */
+    
+    
+}
+.ul{
+    margin: 0;
+    text-align: center;
+}
+#nav--link{
+    background-color: #dd1163;
+    color: #f1f1f1;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.nombre{
+    width: 250px;
+    padding: 45px 0px;
+}
+.logti{
+ display: flex;   
+}
+.scrol{
+    height: 100px;
+}
+.cuadro1{
+    padding: 120px 200px ;
+    overflow: hidden;
+}
+
+.cuadro1 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 300px;
+}
+.controles {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.partes {
+    width: 10px;
+    height: 10px;
+    background-color: #eca3c3;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.partes.active {
+    background-color: #dd1163;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cuadrado1-contenedor {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 300px; /* Ajusta según tu diseño */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: none; /* Oculta las imágenes no activas */
+    width: 100%;
+    text-align: center; /* Asegura que la imagen esté centrada */
+}
+
+.slide.visible {
+    opacity: 1;
+    display: block; /* Muestra solo la imagen activa */
+}
+.slide img {
+    width: 100%;
+    height: auto;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+    
+.id {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 300px; /* Ajusta según tu diseño */
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+#signup-form {
+    overflow: hidden;
+    padding: 20px 20px;     
+    border: none;           
+    border-radius: 5px;
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+    .idi {
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        height: 100px; /* Ajusta según tu diseño */
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: #dd1163;
+        margin-right: 500px;
+        margin-left: 500px;
+    }
+    .userid{
+        border-radius: 20px;
+    }
+    #signature-pad {
+        width: 400px;
+        height: 200px;
+        border: 1px solid #000;
+        margin-left: 510px;
+    }
+    #boton111{
+        background-color: #ccc;
+        color: #dd1163;
+        border-radius: 20px;
+        padding: 10px 20px; 
+        text-align: center;  
+    }
+.name{
+    border-radius: 30px;
+    border-color: #dd1163;
+    height: 40px;
+    text-align: center;
+}
+.last_name{
+    border-radius: 30px;
+    border-color: #dd1163;
+    height: 40px;
+    text-align: center;
+}
+.phone_number{
+    border-radius: 30px;
+    border-color: #dd1163;
+    height: 40px;
+    text-align: center;
+}
+#email{
+    border-radius: 30px;
+    border-color: #dd1163;
+    height: 40px;
+    text-align: center;
+}
+#password{
+    border-radius: 30px;
+    border-color: #dd1163;
+    height: 40px;
+    text-align: center;
+}
+#clear-signature{
+    margin-left: 650px;
+    margin-right: 650px;
+    background-color: #dd1163;
+    color: #ccc;
+    height: 30px;
+    border-radius: 30px;
+}
+

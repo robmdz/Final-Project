@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/css/fabian_inicio.css">
+    <link rel="shortcut icon" href="/frontend/css/media/house-icon.ico" type="image/x-icon">
+    <title>Mi Sitio de Alquiler</title>
+</head>
+<body>
+    <header>
+        <div class="logotituloul">
+            <div class="logti">
+                
+                <img class="logo" src="/frontend/css/media/logo.png" alt="Logo de CheckHou">
+            </div>
+            <nav class="nav">
+                <ul class="ul">
+                    <li class="navitem"><a class="navlink" href="/frontend/html/verification.html">Verificar</a></li>
+                    <li class="navitem"><a class="navlink" id="nav--link" href="/frontend/html/signup.html">Registrar</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <section class="cuadro1">
+        <div class="cuadrado1-contenedor">
+            <div class="slide">
+                <img class="imagen" data-src="house_1.png" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <img class="imagen" data-src="house_2.png" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <img class="imagen" data-src="house_3.png" alt="Imagen 3">
+            </div>
+        </div>
+        <div class="controles">
+            <span class="partes" onclick="irASlide(0)"></span>
+            <span class="partes" onclick="irASlide(1)"></span>
+            <span class="partes" onclick="irASlide(2)"></span>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="segundotitulo">Mejores calificados</h2>
+        <section class="properties">
+            <div class="property">
+                <img src="/frontend/css/media/person_1.jpg" alt="Propiedad 1">
+                <h3>Luisa Catedral</h3>
+                <p>Verificado</p>
+                <button id="nav--link">Contactar</button>
+            </div>
+            <div class="property">
+                <img src="/frontend/css/media/person_2.jpg" alt="Propiedad 2">
+                <h3>Juan Perez</h3>
+                <p>Verificado</p>
+                <button id="nav--link">Contactar</button>
+            </div>
+            <div class="property">
+                <img src="/frontend/css/media/person_3.jpg" alt="Propiedad 3">
+                <h3>Maria Cordoba</h3>
+                <p>Verificado</p>
+                <button id="nav--link">Contactar</button>
+            </div>
+        </section>
+        <div class="scrol"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CheckHou. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '67df3d016cef5247fa19b14f' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production',
+                voice: {
+                  url: "https://runtime-api.voiceflow.com"
+                }
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+      
+    <script src="/frontend/js/fabianjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/frontend/css/fabian_inicio.css">
+    <link rel="shortcut icon" href="/frontend/css/media/house-icon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad"></script>
+</head>
+<body>
+    <header>
+        <div class="logotituloul">
+            <div class="logti">
+                <h1 class="nombre">CheckHou</h1>
+                <img class="logo" src="/frontend/css/media/logo.png" alt="Logo de CheckHou">
+            </div>
+            <nav class="nav">
+                <ul class="ul">
+                    <li class="navitem"><a class="navlink" href="/frontend/html/verification.html">Verificar</a></li>
+                    <li class="navitem"><a class="navlink" href="/frontend/html/signup.html">Registro</a></li>
+                    <li class="navitem"><a class="navlink" href="/frontend/html/inicio.html">Inicio</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+        
+    </header> 
+
+    <h2>Registro</h2>
+    <form id="signup-form">
+        <input type="text" name="nombre" placeholder="Nombre" class="name" id="name" required>
+        <br>
+        <input type="text" name="apellido" placeholder="Apellido" class="last_name" id="last_name" required>
+        <br>
+        <input type="number" name="celular" placeholder="Celular" class="phone_number" id="phone_number" required>
+        <br>
+        <input type="email" id="email" placeholder="Email" required>
+        <br>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <h3>Firma Digital</h3>
+        <canvas id="signature-pad" width="300" height="150" style="border:1px solid black;"></canvas>
+        <button type="button" id="clear-signature">Clear</button>
+
+        <h3>Cargar Documento</h3>
+        <input type="file" id="image-upload" accept="image/*">
+        <button type="submit" id="clear-signature">Enviar</button>
+    </form>
+    <p id="error-message"></p>
+    <script type="module" src="/frontend/js/script.js"></script>
+
+</body>
+</html>
